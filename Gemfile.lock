@@ -1,0 +1,44 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.0.5-java)
+    haml (4.0.7)
+      tilt
+    jruby-jars (9.1.7.0)
+    jruby-rack (1.1.20)
+    rack (1.6.5)
+    rack-protection (1.5.3)
+      rack
+    rake (12.0.0)
+    rubyzip (1.2.1)
+    semantic_logger (4.0.0)
+      concurrent-ruby (~> 1.0)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
+    sinatra-logger (0.3.2)
+      semantic_logger
+      sinatra
+    tilt (2.0.6)
+    warbler (2.0.4)
+      jruby-jars (>= 9.0.0.0)
+      jruby-rack (>= 1.1.1, < 1.3)
+      rake (>= 10.1.0)
+      rubyzip (~> 1.0, < 1.4)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  haml
+  rack
+  sinatra
+  sinatra-flash
+  sinatra-logger (>= 0.2.6)
+  warbler (= 2.0.4)
+
+BUNDLED WITH
+   1.14.4

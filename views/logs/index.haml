@@ -1,0 +1,22 @@
+%h4 Downloadable Files
+%table.table
+  %tbody
+    - @files.each do |file|
+      %tr
+        %td=file
+        %td
+          -post_button('get', "/logs/tail/#{file}", 'tail 500 lines', 'bg-green')
+        %td
+          -post_button('get', "/logs/#{file}", 'view (may be huge)', 'bg-green', "The log file might be very large. Continue?")
+        %td
+          -post_button('get', "/logs/download/#{file}", 'download', 'bg-green')
+        %td
+          -post_button('delete', "/logs/delete/#{file}", 'delete', 'bg-red', "Are you sure you want to delete #{file}")
+
+- if @output
+  .log-output
+    %h4="Contents of #{params[:filename]}"
+    %pre=@output
+      
+
+  

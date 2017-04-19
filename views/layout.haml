@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %link(rel="stylesheet" href="/css/lotus.css")
+    %link(rel="stylesheet" href="/css/app.css")
+  %body
+    .row.sp-vert-sm
+      %a.btn(href='/pms_connections') PMS Connections
+      %a.btn(href='/logs') Logs
+      
+    = styled_flash
+    = yield

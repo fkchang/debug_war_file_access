@@ -1,0 +1,13 @@
+.flash {
+  padding: 20px;
+}
+.flash.warning {
+  background-color: red;
+}
+
+.flash.info {
+  background-color: green;
+}
+div.log-output {
+  padding: 50px;
+}
